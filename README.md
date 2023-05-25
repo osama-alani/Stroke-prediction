@@ -8,10 +8,9 @@ In this model we used two databases which  used to predict whether a patient is 
 
 
 We used:-
- @ pandas
- 
- 
- 
- , altair, seaborn, scikit-learn, xgboost and pyplot in this model to 
 
+pandas library to read the data
+seaborn, altair, plotly, xgboost and pyplot for Visualization
+scikit-learn for prediction
+and other libraries
 
