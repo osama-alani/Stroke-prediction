@@ -16,7 +16,6 @@ seaborn, altair, plotly, xgboost and pyplot for Visualization
 
 scikit-learn for prediction
 
-and other libraries
 
 
 
