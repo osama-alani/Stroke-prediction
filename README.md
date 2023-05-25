@@ -19,6 +19,10 @@ scikit-learn for prediction
 
 And we have added a code inside the model to install these libraries in case you did not install it before.
 
+## how to use the model
 
+You can run the model to see the 
+
+![image](https://github.com/osama-alani/Stroke-prediction/assets/133378136/6965b735-1bae-45dc-8d9a-2bf1be540de6)
 
 
