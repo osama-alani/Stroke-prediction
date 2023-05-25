@@ -16,6 +16,8 @@ seaborn, altair, plotly, xgboost and pyplot for Visualization
 
 scikit-learn for prediction
 
+And we have added a code inside the model to install these libraries in case you did not install it before.
+
 
 
 
