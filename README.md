@@ -13,9 +13,9 @@ We used:-
 
 pandas library to read the data
 
-seaborn, altair, plotly, xgboost and pyplot for Visualization
+seaborn, altair, plotly and pyplot for Visualization
 
-scikit-learn for prediction
+scikit-learn, xgboost for prediction and modeling
 
 And we have added a code inside the model to install these libraries in case you did not install it before.
 
