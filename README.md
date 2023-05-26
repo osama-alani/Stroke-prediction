@@ -23,6 +23,6 @@ And we have added a code inside the model to install these libraries in case you
 
 You can run the model to see the result of our data that we upload
 
-or you can run the model with your oun data, by uploading your data and read it in this cell 
+or you can run the model with your own data, by uploading your data and read it in this cell 
 
 ![image](https://github.com/osama-alani/Stroke-prediction/assets/133378136/d54ccb64-6eaa-45af-9254-91f0c9248299)
