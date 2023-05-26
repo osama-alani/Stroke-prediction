@@ -21,8 +21,8 @@ And we have added a code inside the model to install these libraries in case you
 
 ## how to use the model
 
-You can run the model to see the 
+You can run the model to see the result of our data that we upload
 
-![image](https://github.com/osama-alani/Stroke-prediction/assets/133378136/6965b735-1bae-45dc-8d9a-2bf1be540de6)
+or you can run the model with your oun data, by uploading your data and read it in this cell 
 
-
+![image](https://github.com/osama-alani/Stroke-prediction/assets/133378136/d54ccb64-6eaa-45af-9254-91f0c9248299)
