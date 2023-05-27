@@ -7,7 +7,7 @@
 In this model we used two databases which  used to predict whether a patient is likely to get stroke based on the input parameters like gender, age, various diseases, and smoking status.
 
 
-## libraries
+## 1. Specification of dependencies
 
 We used:-
 
@@ -19,10 +19,28 @@ scikit-learn, xgboost for prediction and modeling
 
 And we have added a code inside the model to install these libraries in case you did not install it before.
 
-## how to use the model
+## 2. Training Code
+```
+#spliting data
+X = train.loc[:,train.columns != 'stroke']
+y = train['stroke']
+train_set_x, test_set_x, train_set_y, test_set_y = train_test_split(X, y, test_size=0.33, random_state=42)
 
-You can run the model to see the result of our data that we upload
+#modeling
+import xgboost as xgb
 
-or you can run the model with your own data, by uploading your data and read it in this cell 
+# Instantiate the model with tuned hyperparameters
+model = xgb.XGBClassifier(
+    seed=42,
+    learning_rate=0.15,  # Adjust the learning rate 
+    n_estimators=100,  # Increase the number of estimators
+    max_depth=5,  # Adjust the maximum depth of each tree
+    subsample=0.8,  # Adjust the subsample ratio
+    colsample_bytree=0.8,  # Adjust the column subsample ratio
+    alpha = 0.4, #Adjust the complexity of a tree
+    gamma = 0.4, #Adjust the complexity of a tree
+    min_child_weight = 5 #sets the weight limit for a tree node to split
+
+```
 
 ![image](https://github.com/osama-alani/Stroke-prediction/assets/133378136/d54ccb64-6eaa-45af-9254-91f0c9248299)
