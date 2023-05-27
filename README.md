@@ -43,4 +43,17 @@ model = xgb.XGBClassifier(
 
 ```
 
-![image](https://github.com/osama-alani/Stroke-prediction/assets/133378136/d54ccb64-6eaa-45af-9254-91f0c9248299)
+## 3. Prediction Code
+```
+# Fit the model with data
+model.fit(
+    train_set_x, train_set_y,
+    eval_set=[(train_set_x, train_set_y), (test_set_x, test_set_y)],
+    verbose=False,
+    early_stopping_rounds=10 
+)
+
+best_n_rounds = model.best_iteration
+
+y_pred = model.predict(test_set_x, ntree_limit=best_n_rounds)
+```
