@@ -11,6 +11,19 @@ All the used libraries could be installed by running the following code:
 ```
 ! pip install numpy pandas altair seaborn scikit-learn xgboost gradio plotly matplotlib
 ```
+And imported by using the code:
+```
+import numpy as np
+import pandas as pd
+import altair as alt
+import seaborn as sns    
+from sklearn.model_selection import train_test_split
+import matplotlib.pyplot as plt
+import plotly.express as px    
+from pandas import DataFrame    
+import gradio as gr 
+import xgboost as xgb
+```
 
 ## 2. Training Code
 The first step in training the model, is to split the data:
