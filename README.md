@@ -17,7 +17,7 @@ seaborn, altair, plotly and pyplot for Visualization
 
 scikit-learn, xgboost for prediction and modeling
 
-And we have added a code inside the model to install these ```pd.read_csv``` libraries in case you did not install it before.
+And we have added a code inside the model to install these libraries in case you did not install it before.
 
 ## 2. Training Code
 ```
