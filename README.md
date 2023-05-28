@@ -7,27 +7,20 @@
 
 ## 1. Specification of dependencies
 
-We used:-
-
-pandas library to read the data
-
-seaborn, altair, plotly and pyplot for Visualization
-
-scikit-learn, xgboost for prediction and modeling
-
-And we have added a code inside the model to install these libraries in case you did not install it before.
+All the used libraries could be installed by running the following code:
+```
+! pip install numpy pandas altair seaborn scikit-learn xgboost gradio plotly matplotlib
+```
 
 ## 2. Training Code
+The first step in training the model, is to split the data:
 ```
-#spliting data
 X = train.loc[:,train.columns != 'stroke']
 y = train['stroke']
 train_set_x, test_set_x, train_set_y, test_set_y = train_test_split(X, y, test_size=0.33, random_state=42)
-
-#modeling
-import xgboost as xgb
-
-# Instantiate the model with tuned hyperparameters
+```
+Then, to intiate a model 
+```
 model = xgb.XGBClassifier(
     seed=42,
     learning_rate=0.15,  # Adjust the learning rate 
@@ -38,20 +31,20 @@ model = xgb.XGBClassifier(
     alpha = 0.4, #Adjust the complexity of a tree
     gamma = 0.4, #Adjust the complexity of a tree
     min_child_weight = 5 #sets the weight limit for a tree node to split
+```
+Then, to fit the model
 
 ```
-
-## 3. Prediction Code
-```
-# Fit the model with data
 model.fit(
     train_set_x, train_set_y,
     eval_set=[(train_set_x, train_set_y), (test_set_x, test_set_y)],
     verbose=False,
     early_stopping_rounds=10 
 )
-
+```
+## 3. Prediction Code
+To make predictions:
+```
 best_n_rounds = model.best_iteration
-
 y_pred = model.predict(test_set_x, ntree_limit=best_n_rounds)
 ```
