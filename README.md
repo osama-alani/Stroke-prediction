@@ -12,4 +12,6 @@
 ! pip install numpy pandas altair seaborn scikit-learn xgboost gradio plotly matplotlib
 ```
 
-
+2. Two data sets were provided to the model: "train1.csv" and "train2.csv" (which later in the code were merged in one data set "train"). And one data set to test the model "test.csv". All the data could be found inside the "data" file in the repostry.
+3. The model's predictions of the test file was saved in the file "submission.csv" which also could be found in the data folder.
+4. The model's prediction's were uploaded to Kaggle's "Binary Classification with a Tabular Stroke Prediction Dataset" competition, and a score of 0.89358 was acquired.
