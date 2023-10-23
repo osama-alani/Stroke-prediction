@@ -1,4 +1,4 @@
-# Stroke-prediction
+# Stroke--prediction
 
 ![image](https://github.com/osama-alani/Stroke-prediction/assets/133378136/902e8de9-8132-496a-a603-1e8f6af1b112)
 
